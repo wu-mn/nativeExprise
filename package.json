@@ -11,7 +11,9 @@
     "lint": "eslint './src/**/*.{js,ts,tsx}'",
     "lint:fix": "eslint --fix './src/**/*.{js,ts,tsx}'",
     "format": "prettier --check ./src",
-    "format:fix": "prettier --write ./src"
+    "format:fix": "prettier --write ./src",
+    "storybook": "start-storybook -p 7007",
+    "storybook:build": "build-storybook -o ./storybookPublic"
   },
   "dependencies": {
     "expo": "~46.0.3",
@@ -23,10 +25,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/react": "^6.5.10",
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.69.1",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.21.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",

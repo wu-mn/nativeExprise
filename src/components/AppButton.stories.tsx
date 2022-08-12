@@ -16,5 +16,5 @@ const Template: Story<AppButtonPropsType> = (args) => <AppButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  title: 'Button',
+  title: 'Click Me!',
 };
